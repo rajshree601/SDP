@@ -1,0 +1,442 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDP-2</title>
+    <link rel="stylesheet" href="  https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <script src="  https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="icon" href="/static/images/favicon.ico">
+  <link rel="stylesheet" href="/static/style.css">
+
+
+
+  <!-- icons -->
+  <script src="https://kit.fontawesome.com/5ea6362832.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- navbar--------------style="background-color: #e3f2fd; -->
+    <section >
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="#">
+        <img src="/static/images/logo669.png" alt="Bootstrap" width="90" height="50">
+      </a>
+      <!-- <a class="navbar-brand titleqwe" href="index.html">TTH</a> -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/destination/">Locations</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Transportation
+          </a>
+          <ul class="dropdown-menu dropdown-menu" style="background-color: #fff9f8;">
+            <li><a class="dropdown-item" href="https://www.makemytrip.com/car-rental/vijayawada-city-cabs.html">Car</a></li>
+            <li><a class="dropdown-item" href="https://www.justdial.com/Guntur/Rapido-Bike-Taxi-Donka-Road/9999PX863-X863-190517193154-M1Q4_BZDET">Bikes</a></li>
+            <li><a class="dropdown-item" href="https://www.irctc.co.in/nget/train-search">Trains</a></li>
+            <li><a class="dropdown-item" href="https://www.goindigo.in/?cid=Display|Affiliate|LF|LA11|1127_go_9302729_4090136526511415019">flights</a></li>
+        </ul>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://127.0.0.1:8000/login/">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://127.0.0.1:8000/regester/">Register</a>
+  </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/feedback/">Feedback</a>
+      </li>
+      </ul>
+      </div>
+  </nav>
+    <!-- Title -->
+    <!-- <div>
+
+        <img class="title-image"  alt="">
+      </div> -->
+
+      <section class="image-overlay">
+        <div class="image-container">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="/static/images/front.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="/static/images/front1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/images/23.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--          <img class="land" src="static/images/49.png" alt="Image description">-->
+<!--          <div class="overlay">-->
+<!--            &lt;!&ndash; <h1 class="first-text">Travel Tourism and Hospitality</h1> &ndash;&gt;-->
+<!--        <p>The world is full of wonder and excitement, waiting to be discovered. Whether you seek the tranquility of nature, the vibrancy of culture, or the thrill of adventure, there is a destination that will capture your heart. With our comprehensive travel services, you can explore the globe and experience the best it has to offer. Start your journey today and make memories that will last a lifetime.</p>-->
+<!--        <p>Let us plan you a-->
+<!--          perfect India Holiday</p>-->
+        </div>
+          </div>
+          </section>
+</section>
+<div class="b-example-divider"></div>
+
+<div class="container px-4 py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom">Custom cards</h2>
+
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="/static/images/london.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small>Earth</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>3d</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="/static/images/taj.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small>Pakistan</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>4d</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('images/london.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+              <img src="/static/images/temple.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </li>
+            <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+              <small>California</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>5d</small>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/images/london.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!--
+--------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+<div class="about-incredible-outer">
+  <div class="container">
+     <div class="about-incredible-left">
+        <img src="https://www.tourmyindia.com/imgnew/about-incrdble.webp" alt="images">
+     </div>
+     <div class="about-incredible-right">
+        <div class="about-area-incredible">
+           <h4>OVERVIEW</h4>
+           <h3 class="highlight">About Incredible India</h3>
+           <!-- <a href="profile.html" class="know-more">Know more about TMI <img src="https://www.tourmyindia.com/imgnew/small-arrow-left.png" alt="images"></a> -->
+        </div>
+        <div class="about-pera-graph">
+           <div class="pera-left">
+              <p>Interesting and Intriguing, India offers incredible holiday experiences through its cultural, topography, and wildlife diversity. With these amazing and unique experiences, this south Asian country conveniently finds its way into the world tourism map as one of the finest destinations for a holistic vacation.</p>
+              <p>India establishes its identity as the country of architectural masterpieces, making it an ideal travel destination to plan a heritage tour in the world. While Taj Mahal makes for the major draw on an India tour, there are a plethora of monuments and edifices in every India travel guide displaying the fine architecture and grandiose of different eras in the country.</p>
+              <p>The diverse Indian topography adorned with the impressive Himalayas; long stretches of coastline; expansive hot, cold and white salt deserts; dense forests; alpine meadows and lakes; and scenic waterfalls pique the tourists’ interest.</p>
+           </div>
+           <div class="pera-left">
+              <p>Along with the best nature sightseeing tours, India offers an opportunity to visitors to have a little adventure of their own. The numerous spell-binding and less-trodden trails give trekking tour opportunities in South Asia unlike any other.</p>
+              <p>India Tours offers a chance to explore its biodiversity in the country's many national parks and wildlife reserves. An enthralling experience entails in the India wildlife tour packages that take tourists to the habitats of Royal Bengal Tigers, one-horned rhinos, and snow leopards amongst many rare, endangered, and unique species of flora and fauna.</p>
+
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<br>
+<div class="b-example-divider"></div>
+<br>
+<div class="container px-4 py-5 whychoose" id="hanging-icons">
+<br>
+  <h2 class="pb-2 why">Why Choose Us?</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="50px" height="50px">
+          <img src="/static/images/whyus3.svg" alt="">
+          <use xlink:href=""/></svg>
+      </div>
+      <div>
+        <h3 class="fs-2">Experience</h3>
+        <br>
+        <p>Our dedicated travel team diligently works round-the-clock to design the best travel experiences for the customers. The skilled team spends considerable amounts of time ideating tour packages that guarantee to make travelling with us an experience like no other. We select the finest hotels in every category, boast an excellent personal fleet of vehicles for transportation.</p>
+
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="50px" height="50px">
+        <img src="stati/images/whyus1.svg" alt="">
+        <use xlink:href=""/></svg>
+      </div>
+      <div>
+        <h3 class="fs-2">Positive Feedback</h3>
+        <br>
+        <p>We're truly humbled to have received volumes of positive customer feedback for our services. This appreciation from our prestigious clients is more valuable than any award for us. As a customer-driven travel company, our priority has always been their satisfaction. Therefore, our dedicated team of experts endeavours to achieve the goal of making our customers happy.</p>
+
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="50px" height="50px">
+          <img src="/static/images/whyus2.svg" alt="">
+          <use xlink:href="#tools"/></svg>
+      </div>
+      <div>
+        <h3 class="fs-2">Recognition</h3>
+        <br>
+        <p>We are proud to be accredited by major tour and travel associations in India and world like IATA, IATO, TAAI, IMF, MOT (Ministry of Tourism, Govt of India), and TOFT. It is an honour for us to be able to be a part of crucial initiatives towards safeguarding animal rights, protection of endangered species, and responsible mountaineering and trekking ventures.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<div class="row boottest move">
+  <p class="toptext">Exclusive Collection Of Travel Blogs
+  </p>
+<br>
+  <div class="col-lg-4">
+    <br>
+    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Image">
+      <title>Image</title>
+      <image href="/static/images/kedar.png" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/>
+    </svg>
+    <h2 class="fw-normal">Kedarkantha Trek</h2>
+    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+    <br>
+    <p><a class="btn btn-secondary" href="https://pandareviewz.com/kedarkantha-trek/">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <br>
+    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Image">
+      <title>Image</title>
+      <image href="/static/images/train.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/>
+    </svg>
+        <h2 class="fw-normal">Train Ride From Kandy</h2>
+    <p>Mesmerizing Train Ride From Kandy To Ella: A Guide For All Travelers Alike!</p>
+    <br>
+    <p><a class="btn btn-secondary" href="https://pandareviewz.com/train-ride-from-kandy-to-ella/">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <br>
+    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Image">
+      <title>Image</title>
+      <image href="/static/images/park.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/>
+    </svg>    <h2 class="fw-normal">National Park Safari</h2>
+    <p>Wilpattu National Park Safari <br>Experience</p>
+    <br>
+    <p><a class="btn btn-secondary" href="https://pandareviewz.com/wilpattu-national-park-sri-lanka/">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+
+
+
+
+
+  <!--
+
+back to top -->
+
+<button class="btntop">
+  <div class="text">
+      <span>Back</span>
+      <span>to</span>
+      <span>top</span>
+  </div>
+  <div class="clone">
+      <span>Back</span>
+      <span>to</span>
+      <span>top</span>
+  </div>
+  <svg width="20px" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+  </svg>
+</button>
+
+
+<button class="learn-more">
+  <span class="circle" aria-hidden="true">
+  <span class="icon arrow"></span>
+  </span>
+  <span class="button-text">Learn More</span>
+</button>
+
+
+
+<p class="float-end mb-1 backtotop">
+  <a href="#">Back to top</a>
+</p>
+
+  <div class="b-example-divider backgrounf">
+
+  <div class="container backgrounf">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top backgrounf">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <p class="footer title">TTH</p>
+        </a>
+        <p class="text-muted">&copy; 2024</p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3">
+        <h5 class="quic">Quick Links</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="http://127.0.0.1:8000/about/" class="nav-link p-0 text-muted">About Us</a></li>
+          <li class="nav-item mb-2"><a href="http://127.0.0.1:8000/destination/" class="nav-link p-0 text-muted">Blogs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Newsletter Subscription</a></li>
+          <li class="nav-item mb-2"><a href="http://127.0.0.1:8000/contact/" class="nav-link p-0 text-muted">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"></a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3"><br>
+        <!-- <h5>Section</h5> -->
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3"><br>
+        <!-- <h5>Section</h5> -->
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+          <li class="nav-item mb-2"><a href="https://earth.google.com/web/@16.89324574,82.76136434,243.58646457a,1566727.27630734d,35y,-0h,0t,0r" class="nav-link p-0 text-muted">Sitemap</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Copyright</a></li>
+
+        </ul>
+      </div>
+    </footer>
+  </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+

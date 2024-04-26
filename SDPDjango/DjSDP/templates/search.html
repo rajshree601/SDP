@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accommodation Form</title>
+    <link rel="icon" href="/static/images/favicon.ico">
+    <style>
+      /* Center the form */
+      .card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80vh;
+      }
+
+      /* Style the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 80%;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      select,
+      output {
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      input[type="range"] {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <form>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="room-type">Room Type:</label>
+        <select id="room-type" name="room-type">
+          <option value="ac">AC Room</option>
+          <option value="non-ac">Non-AC Room</option>
+          <option value="deluxe">Deluxe Room</option>
+          <option value="suite">Suite Room</option>
+        </select>
+
+        <label for="user-rating">User Rating:</label>
+        <input type="range" id="user-rating" name="user-rating" min="1" max="5" value="3">
+        <output for="user-rating" id="user-rating-value">3</output>
+
+        <label for="days">Number of days:</label>
+        <input type="range" id="days" name="days" min="1" max="30" value="1">
+        <output for="days" id="days-value">1</output>
+
+        <button type="button" onclick="searchAccommodation()">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      const daysInput = document.getElementById('days');
+      const daysOutput = document.getElementById('days-value');
+      daysInput.addEventListener('input', () => {
+        daysOutput.value = daysInput.value;
+      });
+
+      const userRatingInput = document.getElementById('user-rating');
+      const userRatingOutput = document.getElementById('user-rating-value');
+      userRatingInput.addEventListener('input', () => {
+        userRatingOutput.value = userRatingInput.value;
+      });
+
+      function searchAccommodation() {
+        const city = document.getElementById('city').value;
+        const days = document.getElementById('days').value;
+        const roomType = document.getElementById('room-type').value;
+        const userRating = document.getElementById('user-rating').value;
+    
+        const url = `/search/${city}/${days}/${roomType}/${userRating}`;
+        window.location.href = url;
+      }
+    </script>
+</body>
+</html>
+    
